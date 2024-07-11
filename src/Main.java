@@ -1,10 +1,6 @@
-import exercicio01.Fila;
-import exercicio02.Familia;
-import exercicio02.Pessoa;
-import exercicio03.Funcionarios;
-import exercicio04.SimuladorDeRede;
-import exercicio05.Jogo;
-import exercicio05.Personagem;
+import desafio.AnalisadorDeDados;
+import desafio.LeitorTXT;
+import desafio.ProcessadorTXT;
 
 public class Main {
     public static void main(String[] args) {
@@ -68,5 +64,11 @@ public class Main {
 //        jogo.adicionarVilao(new Personagem("Vilão", 1000, 200));
 //
 //        jogo.listarPersonagens();
+
+
+//        // Desafio
+//
+//        AnalisadorDeDados<String> analisadorTXT = new AnalisadorDeDados<>(new LeitorTXT(), new ProcessadorTXT());
+//        analisadorTXT.analisarArquivo("/desafio/arquivo.txt");
     }
 }
