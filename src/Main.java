@@ -2,6 +2,8 @@ import exercicio01.Fila;
 import exercicio02.Familia;
 import exercicio02.Pessoa;
 import exercicio03.Funcionarios;
+import exercicio05.Jogo;
+import exercicio05.Personagem;
 
 public class Main {
     public static void main(String[] args) {
@@ -54,5 +56,16 @@ public class Main {
 //        }
 
         // Exercício 04
+
+
+        // Exercício 05
+        Jogo<Personagem, Personagem, Personagem> jogo = new Jogo<>();
+
+        jogo.adicionarHeroi(new Personagem("Herói 01", 100, 500));
+        jogo.adicionarHeroi(new Personagem("Herói 02", 150, 450));
+        jogo.adicionarAjudante(new Personagem("Ajudante", 50, 90));
+        jogo.adicionarVilao(new Personagem("Vilão", 1000, 200));
+
+        jogo.listarPersonagens();
     }
 }
